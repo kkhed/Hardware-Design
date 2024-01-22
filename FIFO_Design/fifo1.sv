@@ -1,9 +1,15 @@
-/************************************************\
-File: FIFO_tb.sv
-References used: 
-	- Cummings FIFO Ref paper
-Design by: Kishore Khed <kishore.khed@gmail.com> -- Logic & Code
-\************************************************/
+/*
+ * Self Learning Project
+ * 
+ * File: fifo1.sv
+ *  
+ * Author:
+ * 
+ * - Kishore Khed <kishore.khed@gmail.com> 
+ * 
+ * 1. Borrowed logic from http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf
+ * 2. Adapted to SystemVerilog.
+ */
 
 
 module fifo1 #(parameter DSIZE = 8,
