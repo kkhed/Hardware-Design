@@ -23,8 +23,8 @@ module fifo1 #(parameter DSIZE = 8,
 			   input  logic             rinc, rclk, rrst_n);
 
 			   
-#	    wire [ASIZE-1:0] waddr, raddr;
-#		wire [ASIZE:0] wptr, rptr, wq2_rptr, rq2_wptr;
+//#	    wire [ASIZE-1:0] waddr, raddr;
+//#		wire [ASIZE:0] wptr, rptr, wq2_rptr, rq2_wptr;
 		
 		logic [ASIZE-1:0] waddr, raddr;
 		logic [ASIZE:0] wptr, rptr, wq2_rptr, rq2_wptr;

@@ -22,8 +22,8 @@ module wptr_full #(parameter ADDRSIZE = 4)
                    input                       winc, wclk, wrst_n);
 				   
     
-	# reg [ADDRSIZE:0] wbin;
-    # wire [ADDRSIZE:0] wgraynext, wbinnext;
+	// # reg [ADDRSIZE:0] wbin;
+    // # wire [ADDRSIZE:0] wgraynext, wbinnext;
 	logic [ADDRSIZE:0] wbin;
     logic [ADDRSIZE:0] wgraynext, wbinnext;
 	

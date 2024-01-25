@@ -34,7 +34,7 @@ module fifomem #(parameter DATASIZE = 8, // Memory data word width
 	
 	localparam DEPTH = 1<<ADDRSIZE;
     
-	# reg [DATASIZE-1:0] mem [0:DEPTH-1];
+	// # reg [DATASIZE-1:0] mem [0:DEPTH-1];
     logic [DATASIZE-1:0] mem [0:DEPTH-1];
 	
 	assign rdata = mem[raddr];

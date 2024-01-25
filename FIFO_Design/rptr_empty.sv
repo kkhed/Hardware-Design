@@ -21,8 +21,8 @@ module rptr_empty #(parameter ADDRSIZE = 4)
 					
 					
 					
-    # reg [ADDRSIZE:0] rbin;
-    # wire [ADDRSIZE:0] rgraynext, rbinnext;
+    // # reg [ADDRSIZE:0] rbin;
+    // # wire [ADDRSIZE:0] rgraynext, rbinnext;
     logic [ADDRSIZE:0] rbin;
     logic [ADDRSIZE:0] rgraynext, rbinnext;
 	

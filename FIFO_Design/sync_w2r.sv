@@ -17,7 +17,7 @@ module sync_w2r #(parameter ADDRSIZE = 4)
                   input        [ADDRSIZE:0] wptr,
                   input                     rclk, rrst_n);
 				  
-    # reg [ADDRSIZE:0] rq1_wptr;
+    // # reg [ADDRSIZE:0] rq1_wptr;
     logic [ADDRSIZE:0] rq1_wptr;
   
   
