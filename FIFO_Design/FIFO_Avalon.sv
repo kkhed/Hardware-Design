@@ -26,17 +26,17 @@ module FIFO #(
           .ASIZE(FIFO_DEPTH)
 		  )fifo_1(
 		  .rdata  (_dataOut),
-			.wfull  (_writefull),
-			.rempty (_readempty),
+	          .wfull  (_writefull),
+                  .rempty (_readempty),
 			
 		  .wdata  (_dataIn),
-			.winc   (_winc),
-			.wclk   (aclk),
-			.wrst_n (aresetn),
-			.rinc   (_rinc),
-			.rclk   (aclk),
-			.rrst_n (aresetn)
-			);
+                  .winc   (_winc),
+	          .wclk   (aclk),
+                  .wrst_n (aresetn),
+                  .rinc   (_rinc),
+                  .rclk   (aclk),
+                  .rrst_n (aresetn)
+                  );
 
   assign sourcePort.valid =  _sourcePortValid; // input
   assign sourcePort.ready = !(_writefull); // output
@@ -46,7 +46,7 @@ module FIFO #(
   assign sinkPort.ready = _sinkPortReady; // input
   assign sinkPort.data = (_sinkPortReady & ! _readempty) ? _dataOut : 0; // output
   
-  
+endmodule
   
 
   
